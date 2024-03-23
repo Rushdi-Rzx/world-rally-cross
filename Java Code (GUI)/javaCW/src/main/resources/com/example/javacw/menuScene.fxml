@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javacw.WRCController">
+    <left>
+        <AnchorPane prefHeight="600.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <ImageView fitHeight="600.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@Images/menuLeft.png" />
+            </ImageView>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="600.0" prefWidth="371.0" BorderPane.alignment="CENTER">
+            <ImageView fitHeight="600.0" fitWidth="350.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                <Image url="@Images/menuSide.jpg" />
+            </ImageView>
+            <GridPane layoutX="63.0" layoutY="90.0" prefHeight="468.0" prefWidth="287.0">
+                <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                </rowConstraints>
+                <Button fx:id="Button" mnemonicParsing="false" onAction="#handleAddButton" prefHeight="44.0" prefWidth="301.0" style="-fx-background-color: black;" stylesheets="@button.css" text="ADD DRIVER DETAILS" textFill="WHITE" textOverrun="CLIP">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#handleDeleteButton" prefHeight="44.0" prefWidth="301.0" style="-fx-background-color: goldenrod;" stylesheets="@button.css" text="DELETE DRIVER DETAILS" textFill="#070707" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#handleUpdateButton" prefHeight="44.0" prefWidth="301.0" style="-fx-background-color: black;" stylesheets="@button.css" text="UPDATE DRIVER DETAILS" textFill="WHITE" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#handleVCTButton" prefHeight="44.0" prefWidth="301.0" style="-fx-background-color: goldenrod;" stylesheets="@button.css" text="RALLY CROSS STANDING TABLE" textFill="#070707" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#handleSRRButton" prefHeight="44.0" prefWidth="301.0" style="-fx-background-color: black;" stylesheets="@button.css" text="SIMULATE RANDOM RACE" textFill="WHITE" GridPane.rowIndex="4">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#handleRaceTableButton" prefHeight="44.0" prefWidth="301.0" style="-fx-background-color: goldenrod;" stylesheets="@button.css" text="VIEW RACE TABLE" textFill="#070707" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#handleSaveDataButton" prefHeight="44.0" prefWidth="301.0" style="-fx-background-color: black;" stylesheets="@button.css" text="SAVE DATA" textFill="WHITE" GridPane.rowIndex="6">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#handleLoadDataButton" prefHeight="44.0" prefWidth="301.0" style="-fx-background-color: goldenrod;" stylesheets="@button.css" text="LOAD DATA" textFill="#070707" GridPane.rowIndex="7">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#handleExitButton" prefHeight="44.0" prefWidth="301.0" style="-fx-background-color: black;" stylesheets="@button.css" text="EXIT" textFill="WHITE" GridPane.rowIndex="8">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+            </GridPane>
+        </AnchorPane>
+    </right>
+</BorderPane>

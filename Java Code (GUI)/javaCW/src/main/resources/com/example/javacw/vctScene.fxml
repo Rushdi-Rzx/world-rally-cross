@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javacw.vctController">
+    <top>
+        <AnchorPane prefHeight="200.0" prefWidth="950.0" BorderPane.alignment="CENTER">
+            <ImageView fitHeight="200.0" fitWidth="950.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@Images/pageTop.jpg" />
+            </ImageView>
+        </AnchorPane>
+    </top>
+    <center>
+        <AnchorPane prefHeight="400.0" prefWidth="950.0" BorderPane.alignment="CENTER">
+            <ImageView fitHeight="400.0" fitWidth="950.0" layoutX="2.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                <Image url="@Images/pageDown.jpg" />
+            </ImageView>
+            <Button fx:id="Button" layoutX="817.0" layoutY="326.0" mnemonicParsing="false" onAction="#handleMainMenuButton" prefHeight="43.0" prefWidth="135.0" style="-fx-background-color: black;" stylesheets="@button.css" text="Main Menu" textFill="GOLDENROD">
+                <font>
+                    <Font name="Bernard MT Condensed" size="24.0" />
+                </font>
+            </Button>
+            <Text fill="GOLDENROD" layoutX="352.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STANDING TABLE" wrappingWidth="250.13671875">
+                <font>
+                    <Font name="Bernard MT Condensed" size="40.0" />
+                </font>
+            </Text>
+            <TableView fx:id="Table" layoutX="21.0" layoutY="64.0" prefHeight="245.0" prefWidth="913.0">
+                <columns>
+                    <TableColumn fx:id="Name" editable="false" prefWidth="239.0" sortable="false" text="Name" />
+                    <TableColumn fx:id="Age" editable="false" minWidth="0.0" prefWidth="116.0" sortable="false" text="Age" />
+                    <TableColumn fx:id="Team" editable="false" prefWidth="216.0" sortable="false" text="Team" />
+                    <TableColumn fx:id="Car" editable="false" prefWidth="168.0" sortable="false" text="Car" />
+                    <TableColumn fx:id="Points" prefWidth="173.0" sortType="DESCENDING" text="Points" />
+                </columns>
+            </TableView>
+        </AnchorPane>
+    </center>
+</BorderPane>
